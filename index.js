@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
         status: "online",
         data: [
             {
-                studen_name: "Nathan",
+                student_name: "Nathan",
                 age: "old"
             }
         ]
