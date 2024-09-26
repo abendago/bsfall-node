@@ -4,7 +4,15 @@ const app = express();
 const PORT = process.env.PORT || 5050;
 
 app.get('/', (req, res) => {
-    res.send(`<h1>Welcome to my Express App</h1>`);
+    res.json({
+        status: "online",
+        data: [
+            {
+                studen_name: "Nathan",
+                age: "old"
+            }
+        ]
+    });
 });
 
 app.listen(PORT, () => {
